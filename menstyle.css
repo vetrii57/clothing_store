@@ -1,7 +1,15 @@
 *{
-    padding: 0%;
-    margin: 0%;
-    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
 }
 .main{
     width: 100%;
@@ -99,4 +107,145 @@ ul a{
     padding: 6px 10px;
     border-radius: 50%;
     cursor: pointer;
+}
+/* ==========================
+   MOBILE RESPONSIVE FIX
+   ========================== */
+
+@media screen and (max-width: 768px){
+
+    *{
+        box-sizing:border-box;
+    }
+
+    .navbar{
+        height:auto;
+        padding:10px;
+    }
+
+    .navbar h1,
+    .navbar ul li,
+    .srch,
+    .logos{
+        float:none;
+        display:block;
+        margin:10px 0;
+        text-align:center;
+    }
+
+    .navbar ul{
+        padding:0;
+    }
+
+    ul li{
+        margin:10px 0;
+    }
+
+    .srch{
+        width:100%;
+    }
+
+    .srchh{
+        width:100%;
+        max-width:100%;
+    }
+
+    .gallery{
+        column-count:1;
+        column-gap:0;
+        padding:10px;
+    }
+
+    .photo{
+        width:100%;
+    }
+
+    .product{
+        flex-direction:column;
+        width:100%;
+        margin-left:0;
+    }
+
+    .product img{
+        width:100%;
+        max-width:250px;
+    }
+
+    .actions{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .address{
+        flex-direction:column;
+        height:auto;
+        padding:15px;
+        text-align:center;
+    }
+
+    .four{
+        width:90%;
+        margin:20px auto;
+        float:none;
+    }
+
+    .free{
+        height:auto;
+        overflow:hidden;
+        padding-bottom:20px;
+    }
+
+    .sale{
+        height:auto;
+        padding:30px 15px;
+    }
+
+    .sale button{
+        margin:20px auto;
+        display:block;
+    }
+
+    .feat{
+        height:auto;
+        padding-bottom:30px;
+    }
+
+    .imc{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .imc img{
+        width:90%;
+        height:auto;
+    }
+
+    .feat button{
+        margin:30px auto;
+        display:block;
+    }
+
+    .loop{
+        height:auto;
+        padding:30px 15px;
+    }
+
+    .loop input{
+        width:90%;
+        margin:20px auto;
+        display:block;
+    }
+
+    .loop button{
+        display:block;
+        margin:10px auto;
+    }
+
+    .disco h1{
+        font-size:35px;
+    }
+
+    .disco p{
+        font-size:18px;
+    }
 }
