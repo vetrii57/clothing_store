@@ -157,144 +157,213 @@ ul a{
   text-align: center;
   background-color: rgb(209, 241, 175) ;
 }
-/* ==========================
+/* =========================
    MOBILE RESPONSIVE FIX
-   ========================== */
+   ========================= */
 
-@media screen and (max-width: 768px){
-
-    *{
-        box-sizing:border-box;
-    }
+@media screen and (max-width:768px){
 
     .navbar{
-        height:auto;
-        padding:10px;
+        height: auto;
+        padding-bottom: 10px;
     }
 
-    .navbar h1,
-    .navbar ul li,
-    .srch,
-    .logos{
-        float:none;
-        display:block;
-        margin:10px 0;
-        text-align:center;
+    .navbar h1{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
     }
 
-    .navbar ul{
-        padding:0;
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
     }
 
     ul li{
-        margin:10px 0;
+        margin: 8px 12px;
+        font-size: 14px;
     }
 
     .srch{
-        width:100%;
+        float: none;
+        width: 95%;
+        margin: 10px auto;
+        display: block;
     }
 
     .srchh{
-        width:100%;
-        max-width:100%;
+        width: 100%;
+        max-width: 100%;
     }
 
-    .gallery{
-        column-count:1;
-        column-gap:0;
-        padding:10px;
+    .logos{
+        float: none;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 10px 0;
     }
 
-    .photo{
-        width:100%;
+    .shop{
+        height: auto;
+        padding-bottom: 40px;
     }
 
-    .product{
-        flex-direction:column;
-        width:100%;
-        margin-left:0;
-    }
-
-    .product img{
-        width:100%;
-        max-width:250px;
-    }
-
-    .actions{
-        flex-direction:column;
-        gap:10px;
-    }
-
-    .address{
-        flex-direction:column;
-        height:auto;
-        padding:15px;
-        text-align:center;
-    }
-
-    .four{
-        width:90%;
-        margin:20px auto;
-        float:none;
-    }
-
-    .free{
-        height:auto;
-        overflow:hidden;
-        padding-bottom:20px;
-    }
-
-    .sale{
-        height:auto;
-        padding:30px 15px;
-    }
-
-    .sale button{
-        margin:20px auto;
-        display:block;
-    }
-
-    .feat{
-        height:auto;
-        padding-bottom:30px;
-    }
-
-    .imc{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .imc img{
-        width:90%;
-        height:auto;
-    }
-
-    .feat button{
-        margin:30px auto;
-        display:block;
-    }
-
-    .loop{
-        height:auto;
-        padding:30px 15px;
-    }
-
-    .loop input{
-        width:90%;
-        margin:20px auto;
-        display:block;
-    }
-
-    .loop button{
-        display:block;
-        margin:10px auto;
+    .coll{
+        margin-left: 20px;
+        margin-top: 30px;
     }
 
     .disco h1{
-        font-size:35px;
+        font-size: 36px;
+        margin-right: 15px;
     }
 
     .disco p{
-        font-size:18px;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+    .btn{
+        margin-top: 30px;
+    }
+
+    .free{
+        height: auto;
+        padding: 20px 0;
+        overflow: hidden;
+    }
+
+    .four{
+        float: none;
+        width: 85%;
+        height: auto;
+        margin: 20px auto;
+        padding: 20px 0;
+    }
+
+    .four img{
+        display: block;
+        margin: 20px auto;
+    }
+
+    .sale{
+        height: auto;
+        padding: 40px 15px;
+    }
+
+    .sale button{
+        display: block;
+        margin: 25px auto;
+    }
+
+    .feat{
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .imc{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imc img{
+        width: 90%;
+        height: auto;
+    }
+
+    .feat button{
+        display: block;
+        margin: 30px auto;
+    }
+
+    .loop{
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .loop h1{
+        font-size: 30px;
+    }
+
+    .loop p{
+        font-size: 16px;
+    }
+
+    .loop input{
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .loop button{
+        display: block;
+        margin: 10px auto;
+    }
+
+    .gallery{
+        column-count: 1;
+        column-gap: 0;
+        padding: 10px;
+    }
+
+    .photo{
+        width: 100%;
+    }
+
+    .address{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        width: 95%;
+        padding: 15px;
+    }
+
+    .address h1{
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #products{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product{
+        flex-direction: column;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product img{
+        width: 100%;
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .product-text{
+        text-align: center;
+    }
+
+    .actions{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .product1{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .empty{
+        height: 120px;
     }
 }
