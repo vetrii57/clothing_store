@@ -1,469 +1,381 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scrollbar-width:none;
 }
 
-html{
-    overflow-x: hidden;
-}
-
+html,
 body{
-    overflow-x: hidden;
+    width:100%;
+    overflow-x:hidden;
 }
+
 .main{
-    width: 100%;
+    width:100%;
 }
+
+/* ================= NAVBAR ================= */
+
 .navbar{
-    width: 100%;
-    height: 60px;
-    background-color:rgb(255, 255, 255);
-    position: fixed;
+    width:100%;
+    min-height:60px;
+    background:#fff;
+    position:fixed;
+    z-index:1000;
+    border-bottom:1px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding:10px 20px;
 }
-.navbar{
-    border-bottom: 1px solid black;
-}
+
 .navbar h1{
-    width: 200px;
-    padding: 10px;
-    float: left;
+    font-size:40px;
 }
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
 .navbar ul li{
-    margin-left: 45px;
-    float:left
+    list-style:none;
+    font-size:17px;
 }
+
+.navbar ul a{
+    text-decoration:none;
+    color:rgb(70,65,65);
+}
+
 #one{
-    text-decoration: underline 10px ;
-    color: rgb(0, 0, 0);
+    text-decoration:underline 4px;
+    color:black;
 }
-.logos{
-    text-decoration: solid;
-    font-family: Arial;
-    color: rgb(0, 0, 0);
-}
-ul li{
-    list-style: none;
-    margin-top: 21px;
-    margin-left: 67px;
-    font-size: 17px;
-    color:rgb(70, 65, 65);
-    
-}
-ul a{
-    text-decoration: none;
-    
-}
+
 .srch{
-    position: relative;
-    float: left;
-    margin-top: 15px;
-    margin-left: 20px;
+    margin-left:10px;
 }
+
 .srchh{
-    height: 30px;
-    width: 300px;
-    background-color: whitesmoke;  
-    border-radius: 10px; 
-    border: none;
+    height:30px;
+    width:250px;
+    background-color:whitesmoke;
+    border-radius:10px;
+    border:none;
+    padding-left:10px;
 }
+
 .logos{
-    position:relative;
-    float: left;
-    margin-top: 15px;
-    margin-left: 20px;
+    display:flex;
+    gap:15px;
 }
+
 .logos a{
-    text-decoration: none;
-    color: black;
+    text-decoration:none;
+    color:black;
+    font-size:20px;
 }
+
+/* ================= HERO ================= */
+
 .shop{
-    padding-top:70px;
-    border-top: 1px solid transparent;
-    height: 450px;
-    width: 100%;
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(94, 129, 157))
+    padding-top:100px;
+    height:450px;
+    width:100%;
+    background:linear-gradient(to right,rgb(0,0,0),rgb(94,129,157));
 }
+
 .coll{
-    height: auto ;
-    width: 120px;
-    background-color:  rgba(255, 255, 255, 0.3);
-    margin-top: 60px;
-    margin-left: 30px;
-    border-radius: 5px;
-    padding-left: 10px;
-    color: aliceblue;
-    font-size: medium;
+    width:120px;
+    background:rgba(255,255,255,0.3);
+    margin-top:40px;
+    margin-left:30px;
+    border-radius:5px;
+    padding:10px;
+    color:white;
 }
+
 .disco h1{
-    color: white;
-    font-size: 60px;
-    margin-left: 30px;
-    margin-top: 20px;
-    font-style: italic;
+    color:white;
+    font-size:60px;
+    margin-left:30px;
+    margin-top:20px;
+    font-style:italic;
 }
+
 .disco p{
-    color: white;
-    font-size: 30px;
-    margin-left: 30px;
-    margin-top: 15px;
-    font-style: italic;
+    color:white;
+    font-size:30px;
+    margin-left:30px;
+    margin-top:15px;
+    font-style:italic;
 }
+
 .btn{
-    margin-left: 30px;
-    margin-top: 60px;
+    margin-left:30px;
+    margin-top:60px;
 }
-.btn1{
-    background-color: white;
-    border-radius: 10px;
-    height: 40px;
-    width:100px;
-    border: none;
-    margin-right: 10px;
-    font-style: italic;
-}
+
+.btn1,
 .btn2{
-    background-color: white;
-    border-radius: 10px;
-    height: 40px;
-    width: 80px;
-    border: none;
-    font-style: italic;
-    /* color: white; */
+    background:white;
+    border:none;
+    border-radius:10px;
+    height:40px;
+    padding:0 15px;
+    font-style:italic;
 }
+
+.btn1{
+    margin-right:10px;
+}
+
+/* ================= FEATURES ================= */
+
 .free{
-    border-top: 1px solid transparent;
-    height: 300px;
-    width: 100%;
-    background: rgb(244, 243, 243);
+    width:100%;
+    background:rgb(244,243,243);
+    padding:40px 20px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
 }
+
 .four{
-    float: left;
-    width: 230px;
-    background-color: white;
-    height: 180px;
-    margin:40px;
-    margin-top: 60px;
-    border-radius: 20px;
+    width:230px;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
 }
+
 .four img{
-    margin-top: 30px;
-    margin-left: 60px;
-    align-items: center; 
+    margin-bottom:20px;
 }
-.four h3{
-    text-align: center;
-}
+
 .four p{
-    text-align: center;
-    margin-top: 10px ;
+    margin-top:10px;
 }
+
+/* ================= SALE ================= */
+
 .sale{
-    border-top: 1px solid transparent;
-    height: 250px;
-    width: 100%;
-    /* background: linear-gradient(to right, rgb(47, 47, 96), violet)*/
-    background-color: black;
+    width:100%;
+    background:black;
+    text-align:center;
+    padding:70px 20px;
 }
+
 .sale h1{
-    color: white;
-    text-align: center;
-    padding-top: 70px;
+    color:white;
 }
+
 .sale p{
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 20px;
+    color:white;
+    font-size:20px;
+    margin-top:20px;
 }
+
 .sale button{
-    margin-left:580px;
-    margin-top: 30px;
-    height: 40px;
-    font-size: 15px;
-    font-style: italic;
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    text-decoration: solid;
+    margin-top:30px;
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    font-style:italic;
 }
+
+/* ================= FEATURED PRODUCTS ================= */
+
 .feat{
-    width: 100%;
-    height: 1000px;
+    width:100%;
+    padding-bottom:60px;
 }
+
 .feat h1{
-    text-align: center;
-    padding-top: 40px;
-    font-family: 'Lucida Sans';
+    text-align:center;
+    padding-top:40px;
+    font-family:'Lucida Sans';
 }
+
 .feat p{
-    padding-top: 40px;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Lucida Sans'
+    padding-top:40px;
+    text-align:center;
+    font-size:20px;
+    font-family:'Lucida Sans';
 }
+
 .imc{
-    margin-top: 45px;
-    display: flex;
-    max-width: 100%;
+    margin-top:45px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
+
+.imc figure{
+    text-align:center;
+}
+
 .imc figcaption{
-    text-align: center;
-    font-size: larger;
-    font-family:'Times New Roman', Times, serif;
+    margin-top:10px;
+    font-size:larger;
 }
+
 .feat button{
-   margin-top: 80px;
-   margin-left: 45%;
-   padding: 5px;
-   background-color: white;
-   border: 1px solid black;
-   border-radius: 5px;
+    display:block;
+    margin:50px auto;
+    padding:8px 15px;
+    background:white;
+    border:1px solid black;
+    border-radius:5px;
 }
+
 .feat button a{
-    text-decoration: none;
-    color: black;
+    text-decoration:none;
+    color:black;
 }
+
+/* ================= NEWSLETTER ================= */
+
 .loop{
-    background-color: rgb(18, 35, 62);
-    height: 350px;
+    background:rgb(18,35,62);
+    text-align:center;
+    padding:60px 20px;
 }
+
 .loop h1{
-    text-align: center;
-    padding-top: 60px;
-    color: white;
-    font-size: 45px;
-    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size:45px;
 }
+
 .loop p{
-    text-align: center;
-    padding-top: 45px;
-    color: white;
-    font-size: larger;
+    color:white;
+    margin-top:30px;
+    font-size:18px;
 }
+
 .loop input{
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-left: 40%;
-    margin-top: 45px;
-    height: 30px;
-    width: 200px;
-    border-radius: 10px;
-    border:solid white 1px;
+    margin-top:30px;
+    height:35px;
+    width:250px;
+    border-radius:10px;
+    border:1px solid white;
+    background:rgba(255,255,255,0.1);
+    color:white;
+    padding-left:10px;
 }
 
 .loop button{
-    height: 30px;
-    width: 80px;
-    background-color: white;
-    border-radius: 10px;
-    border:none
+    height:35px;
+    width:90px;
+    border:none;
+    border-radius:10px;
+    margin-left:10px;
 }
-/* =========================
-   MOBILE RESPONSIVE FIX
-   ========================= */
+
+/* ================= MOBILE ================= */
 
 @media screen and (max-width:768px){
 
     .navbar{
-        height: auto;
-        padding-bottom: 10px;
+        flex-direction:column;
+        text-align:center;
     }
 
-    .navbar h1{
-        float: none;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    ul{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0;
-    }
-
-    ul li{
-        margin: 8px 12px;
-        font-size: 14px;
+    .navbar ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+        margin-top:10px;
     }
 
     .srch{
-        float: none;
-        width: 95%;
-        margin: 10px auto;
-        display: block;
+        width:95%;
+        margin-top:10px;
     }
 
     .srchh{
-        width: 100%;
-        max-width: 100%;
+        width:100%;
     }
 
     .logos{
-        float: none;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin: 10px 0;
+        margin-top:10px;
     }
 
     .shop{
-        height: auto;
-        padding-bottom: 40px;
+        height:auto;
+        padding-top:180px;
+        padding-bottom:40px;
     }
 
     .coll{
-        margin-left: 20px;
-        margin-top: 30px;
+        margin-left:20px;
     }
 
     .disco h1{
-        font-size: 36px;
-        margin-right: 15px;
+        font-size:32px;
+        margin-right:20px;
     }
 
     .disco p{
-        font-size: 20px;
-        margin-right: 15px;
+        font-size:20px;
+        margin-right:20px;
     }
 
     .btn{
-        margin-top: 30px;
+        margin-top:30px;
     }
 
     .free{
-        height: auto;
-        padding: 20px 0;
-        overflow: hidden;
+        flex-direction:column;
+        align-items:center;
     }
 
     .four{
-        float: none;
-        width: 85%;
-        height: auto;
-        margin: 20px auto;
-        padding: 20px 0;
-    }
-
-    .four img{
-        display: block;
-        margin: 20px auto;
+        width:90%;
     }
 
     .sale{
-        height: auto;
-        padding: 40px 15px;
+        padding:40px 15px;
     }
 
-    .sale button{
-        display: block;
-        margin: 25px auto;
+    .sale h1{
+        font-size:35px;
     }
 
-    .feat{
-        height: auto;
-        padding-bottom: 40px;
+    .sale p{
+        font-size:18px;
     }
 
     .imc{
-        flex-direction: column;
-        align-items: center;
+        flex-direction:column;
+        align-items:center;
     }
 
     .imc img{
-        width: 90%;
-        height: auto;
-    }
-
-    .feat button{
-        display: block;
-        margin: 30px auto;
-    }
-
-    .loop{
-        height: auto;
-        padding: 30px 15px;
+        width:90%;
+        height:auto;
     }
 
     .loop h1{
-        font-size: 30px;
+        font-size:30px;
     }
 
     .loop p{
-        font-size: 16px;
+        font-size:16px;
     }
 
     .loop input{
-        width: 90%;
-        margin: 20px auto;
-        display: block;
+        width:90%;
+        margin-bottom:10px;
     }
 
     .loop button{
-        display: block;
-        margin: 10px auto;
-    }
-
-    .gallery{
-        column-count: 1;
-        column-gap: 0;
-        padding: 10px;
-    }
-
-    .photo{
-        width: 100%;
-    }
-
-    .address{
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        width: 95%;
-        padding: 15px;
-    }
-
-    .address h1{
-        padding-left: 0;
-        margin-bottom: 10px;
-    }
-
-    #products{
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .product{
-        flex-direction: column;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .product img{
-        width: 100%;
-        max-width: 250px;
-        margin: auto;
-    }
-
-    .product-text{
-        text-align: center;
-    }
-
-    .actions{
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .product1{
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .empty{
-        height: 120px;
+        margin-left:0;
     }
 }
