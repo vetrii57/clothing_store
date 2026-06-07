@@ -1,0 +1,251 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    scrollbar-width: none;
+}
+.main{
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color:rgb(255, 255, 255);
+    position: fixed;
+}
+.navbar{
+    border-bottom: 1px solid black;
+}
+.navbar h1{
+    width: 200px;
+    padding: 10px;
+    float: left;
+}
+.navbar ul li{
+    margin-left: 45px;
+    float:left
+}
+#one{
+    text-decoration: underline 10px ;
+    color: rgb(0, 0, 0);
+}
+.logos{
+    text-decoration: solid;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+}
+ul li{
+    list-style: none;
+    margin-top: 21px;
+    margin-left: 67px;
+    font-size: 17px;
+    color:rgb(70, 65, 65);
+    
+}
+ul a{
+    text-decoration: none;
+    
+}
+.srch{
+    position: relative;
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.srchh{
+    height: 30px;
+    width: 300px;
+    background-color: whitesmoke;  
+    border-radius: 10px; 
+    border: none;
+}
+.logos{
+    position:relative;
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.logos a{
+    text-decoration: none;
+    color: black;
+}
+.shop{
+    padding-top:70px;
+    border-top: 1px solid transparent;
+    height: 450px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(94, 129, 157))
+}
+.coll{
+    height: auto ;
+    width: 120px;
+    background-color:  rgba(255, 255, 255, 0.3);
+    margin-top: 60px;
+    margin-left: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: aliceblue;
+    font-size: medium;
+}
+.disco h1{
+    color: white;
+    font-size: 60px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-style: italic;
+}
+.disco p{
+    color: white;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-style: italic;
+}
+.btn{
+    margin-left: 30px;
+    margin-top: 60px;
+}
+.btn1{
+    background-color: white;
+    border-radius: 10px;
+    height: 40px;
+    width:100px;
+    border: none;
+    margin-right: 10px;
+    font-style: italic;
+}
+.btn2{
+    background-color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+    border: none;
+    font-style: italic;
+    /* color: white; */
+}
+.free{
+    border-top: 1px solid transparent;
+    height: 300px;
+    width: 100%;
+    background: rgb(244, 243, 243);
+}
+.four{
+    float: left;
+    width: 230px;
+    background-color: white;
+    height: 180px;
+    margin:40px;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+.four img{
+    margin-top: 30px;
+    margin-left: 60px;
+    align-items: center; 
+}
+.four h3{
+    text-align: center;
+}
+.four p{
+    text-align: center;
+    margin-top: 10px ;
+}
+.sale{
+    border-top: 1px solid transparent;
+    height: 250px;
+    width: 100%;
+    /* background: linear-gradient(to right, rgb(47, 47, 96), violet)*/
+    background-color: black;
+}
+.sale h1{
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+.sale p{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.sale button{
+    margin-left:580px;
+    margin-top: 30px;
+    height: 40px;
+    font-size: 15px;
+    font-style: italic;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    text-decoration: solid;
+}
+.feat{
+    width: 100%;
+    height: 1000px;
+}
+.feat h1{
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Lucida Sans';
+}
+.feat p{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans'
+}
+.imc{
+    margin-top: 45px;
+    display: flex;
+    max-width: 100%;
+}
+.imc figcaption{
+    text-align: center;
+    font-size: larger;
+    font-family:'Times New Roman', Times, serif;
+}
+.feat button{
+   margin-top: 80px;
+   margin-left: 45%;
+   padding: 5px;
+   background-color: white;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+.feat button a{
+    text-decoration: none;
+    color: black;
+}
+.loop{
+    background-color: rgb(18, 35, 62);
+    height: 350px;
+}
+.loop h1{
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.loop p{
+    text-align: center;
+    padding-top: 45px;
+    color: white;
+    font-size: larger;
+}
+.loop input{
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 40%;
+    margin-top: 45px;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    border:solid white 1px;
+}
+
+.loop button{
+    height: 30px;
+    width: 80px;
+    background-color: white;
+    border-radius: 10px;
+    border:none
+}

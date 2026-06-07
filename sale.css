@@ -1,0 +1,151 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    scrollbar-width: none;
+}
+.main{
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color:rgb(255, 255, 255);
+    position: fixed;
+}
+.navbar h1{
+    width: 200px;
+    padding: 10px;
+    float: left;
+}
+.navbar ul li{
+    margin-left: 45px;
+    float:left
+}
+#one{
+    text-decoration: underline 10px ;
+    color:  rgb(0, 0, 0);
+}
+.logos{
+    text-decoration: solid;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+}
+ul li{
+    list-style: none;
+    margin-top: 21px;
+    margin-left: 67px;
+    font-size: 17px;
+    color:rgb(70, 65, 65);
+    
+}
+ul a{
+    text-decoration: none;
+    
+}
+.srch{
+    position: relative;
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.srchh{
+    height: 30px;
+    width: 300px;
+    background-color: whitesmoke;  
+    border-radius: 10px; 
+    border: none;
+}
+.logos{
+    position:relative;
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.logos a{
+    text-decoration: none;
+    color: black;
+}
+.head{
+    position: absolute;
+    margin-top: 70px;
+}
+.empty{
+    height: 60px;
+}
+.address{
+    height: 60px;
+    width: 96%;
+    background-color: rgb(209, 241, 175);
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; /* Optional: adds some spacing from edges */
+
+}
+.address h1{
+    padding-left: 10px;
+}
+.address p{
+    text-decoration: underline;
+}
+#products{
+    border: solid black 1px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 97.5%;
+    padding-bottom: 10px;
+}
+.product {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 95%;
+  border: solid black 1px;
+}
+
+.product img {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-text h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.product-text p {
+  margin: 6px 0;
+  color: gray;
+  font-size: 18px;
+}
+
+.product-text h3 {
+  margin: 12px 0;
+  color: #e57373;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.actions {
+  display: flex;
+  gap: 40px;
+  margin-top: 35px;
+  font-weight: 700;
+}
+.product1{
+  padding: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 95%;
+  border: solid black 2px;
+  text-align: center;
+  background-color: rgb(209, 241, 175) ;
+}
